@@ -6,9 +6,10 @@ steps:
       - |
         echo "Hello world"
   - name: 'gcr.io/cloud-builders/npm'
+    entrypoint: 'bash'
     args:
       - '-c'
       - |
-        npm whoami
+        npm install
         npm run test
 timeout: 660s
