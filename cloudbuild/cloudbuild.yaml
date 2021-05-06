@@ -5,4 +5,8 @@ steps:
       - '-c'
       - |
         echo "Hello world"
-timeout: 660s
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'test']
+timeout: 660sworl
