@@ -9,5 +9,10 @@ steps:
     args:
       - '-c'
       - |
-        npm install
+        install
+  - name: 'gcr.io/cloud-builders/npm'
+    args:
+      - '-c'
+      - |
+        npm run test
 timeout: 660s
