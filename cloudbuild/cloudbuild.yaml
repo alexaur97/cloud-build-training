@@ -9,4 +9,4 @@ steps:
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'test']
-timeout: 660sworl
+timeout: 660
