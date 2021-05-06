@@ -9,4 +9,4 @@ steps:
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'sh node_modules/.bin/jest']
-timeout: 660
+timeout: 660s
