@@ -9,7 +9,7 @@ steps:
     args:
       - '-c'
       - |
-        npm install
+        npm whoami
   - name: 'gcr.io/cloud-builders/npm'
     args:
       - '-c'
