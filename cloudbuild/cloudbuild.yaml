@@ -9,10 +9,6 @@ steps:
     args:
       - '-c'
       - |
-        'npm whoami'
-  - name: 'gcr.io/cloud-builders/npm'
-    args:
-      - '-c'
-      - |
+        npm whoami
         npm run test
 timeout: 660s
