@@ -6,7 +6,13 @@ steps:
       - |
         echo "Hello world"
   - name: 'gcr.io/cloud-builders/npm'
-    args: ['install']
+    args:
+      - '-c'
+      - |
+        npm install
   - name: 'gcr.io/cloud-builders/npm'
-    args: ['run', 'sh node_modules/.bin/jest']
+    args:
+      - '-c'
+      - |
+        npm run test
 timeout: 660s
