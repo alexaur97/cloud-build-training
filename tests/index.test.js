@@ -1,4 +1,4 @@
-import {upper} from '../utils.js'
+const utils = require('../utils.js');
 
 describe('Sample test', () => {
     it('object type', () => {
@@ -10,6 +10,6 @@ describe('Sample test', () => {
     });
 
     it('to upper case', () => {
-        expect(upper('arg')).toEqual('ARG');
+        expect(utils.upper('arg')).toEqual('ARG');
     })
 });
