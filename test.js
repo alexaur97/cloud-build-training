@@ -1,4 +1,4 @@
-import {sampleTest} from 'tests/sampleTest.js';
+//import {sampleTest} from 'tests/sampleTest.js';
 
 describe('Sample test', () => {
   test('object type', () => {
