@@ -12,4 +12,10 @@ steps:
       - |
         npm install
         npm run test
+  - name: 'gcr.io/cloud-builders/git'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo 'PASSED'
 timeout: 660s
