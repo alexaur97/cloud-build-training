@@ -10,6 +10,6 @@ function sampleTest() {
     });
 }
 
-export {
+module.exports = {
     sampleTest
 }
