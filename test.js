@@ -1,4 +1,4 @@
-import sampleTest from 'tests/sample.test.js';
+const test = require('tests/sample.test.js');
 
 describe('Sample test', () => {
   test('object type', () => {
