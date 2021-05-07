@@ -18,4 +18,5 @@ steps:
       - '-c'
       - |
         echo 'PASSED'
+        echo 'Congrats'
 timeout: 660s
