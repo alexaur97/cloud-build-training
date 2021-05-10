@@ -16,7 +16,7 @@ steps:
           echo "All tests passed successfully";
         else
           echo "One or more tests failed";
-          exit 0; #stop execution
+          exit 1; #stop execution
         fi
   - name: 'ubuntu'
     entrypoint: 'bash'
