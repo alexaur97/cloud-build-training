@@ -16,8 +16,8 @@ steps:
           echo "All tests passed successfully";
         else
           echo "One or more tests failed";
-          exit 1; #stop execution
-        fi
+          gcloud builds cancel $BUILD_ID; #stop execution
+        fi 
   - name: 'ubuntu'
     entrypoint: 'bash'
     args:
