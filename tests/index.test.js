@@ -6,7 +6,7 @@ describe('Sample test', () => {
     });
 
     it('Assert equals', () => {
-        expect(2).toEqual(2);
+        expect(2).toEqual(3);
     });
 
     it('to upper case', () => {
