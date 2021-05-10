@@ -4,5 +4,6 @@ steps:
     args:
       - '-c'
       - |
+        make install
         make hello
 timeout: 660s
