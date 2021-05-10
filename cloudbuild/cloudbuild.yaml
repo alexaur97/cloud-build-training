@@ -16,12 +16,5 @@ steps:
           echo "All tests passed successfully";
         else
           echo "One or more tests failed";
-          gcloud builds cancel $BUILD_ID; #stop execution
         fi 
-  - name: 'ubuntu'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        echo "This should not print"
 timeout: 660s
