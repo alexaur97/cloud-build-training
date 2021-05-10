@@ -1,2 +1,2 @@
 hello:
-    echo "hello world"
+\techo "hello world"
