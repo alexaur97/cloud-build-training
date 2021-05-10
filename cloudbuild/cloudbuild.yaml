@@ -1,5 +1,5 @@
 steps:
-  - name: 'gcr.io/cloud-builders/git'
+  - name: 'ubuntu'
     entrypoint: 'bash'
     args:
       - '-c'
@@ -13,8 +13,8 @@ steps:
         npm install
         npm run test
         if [ $? -eq 0 ]; then # $? = result of previous command. Will be 0 if command succeed and 1 if failed 
-          echo "All tests passed successfully";
+          echo "|nAll tests passed successfully";
         else
-          echo "One or more tests failed";
+          echo "\nOne or more tests failed";
         fi
 timeout: 660s
