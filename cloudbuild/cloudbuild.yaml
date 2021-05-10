@@ -4,6 +4,6 @@ steps:
     args:
       - '-c'
       - |
-        make install
+        npm make install
         make hello
 timeout: 660s
