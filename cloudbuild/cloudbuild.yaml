@@ -12,7 +12,7 @@ steps:
       - |
         npm install
         npm run test
-        if [ $? -eq 0 ]; then
+        if [ $? -eq 0 ]; then # $? = result of previous command. Will be 0 if command succeed and 1 if failed 
           echo "All tests passed successfully";
         else
           echo "One or more tests failed";
