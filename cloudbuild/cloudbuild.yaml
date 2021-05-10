@@ -4,5 +4,5 @@ steps:
     args:
       - '-c'
       - |
-        Makefile
+        make hello
 timeout: 660s
