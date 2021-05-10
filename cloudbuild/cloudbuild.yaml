@@ -15,6 +15,13 @@ steps:
         if [ $? -eq 0 ]; then # $? = result of previous command. Will be 0 if command succeed and 1 if failed 
           echo "All tests passed successfully";
         else
-          exit 0;
+          echo "One or more tests failed";
+          exit 0; #stop execution
         fi
+  - name: 'ubuntu'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo "This should not print"
 timeout: 660s
