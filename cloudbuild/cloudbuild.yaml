@@ -5,5 +5,5 @@ steps:
       - '-c'
       - |
         npm install make
-        make hello
+        npm make hello
 timeout: 660s
