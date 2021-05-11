@@ -5,8 +5,7 @@ test:
 		echo "All test passed successfully";\
 	else\
 		echo "One or more tests failed";\
-		#gcloud builds cancel $$BUILD_ID;\
-		exit 1;\
+		gcloud builds cancel $$BUILD_ID;\
 	fi\
 	
 hello2:
