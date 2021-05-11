@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
-    id: 'installing and executing Make"
+    id: 'installing and executing Make'
     entrypoint: 'bash'
     args:
       - '-c'
