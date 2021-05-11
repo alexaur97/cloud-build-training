@@ -10,9 +10,9 @@ test:
 	fi\
 	
 stop:
-	if [ `cat stop.txt | grep "stop" | wc -m` -gt 0 ]; then
-		gcloud builds cancel $$BUILD_ID; #stop execution
-	fi
+	if [ `cat stop.txt | grep "stop" | wc -m` -gt 0 ]; then \
+		gcloud builds cancel $$BUILD_ID; \#stop execution
+	fi\
 
 hello2:
 	echo "This should not print";\
