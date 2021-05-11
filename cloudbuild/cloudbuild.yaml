@@ -1,27 +1,11 @@
 steps:
-  - name: 'ubuntu'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        echo "Hello world"
   - name: 'gcr.io/cloud-builders/npm'
     entrypoint: 'bash'
     args:
       - '-c'
       - |
-        npm install
-        npm run test
-        if [ $? -eq 0 ]; then # $? = result of previous command. Will be 0 if command succeed and 1 if failed 
-          echo "All tests passed successfully";
-        else
-          echo "One or more tests failed";
-          gcloud builds cancel $BUILD_ID; #stop execution
-        fi 
-  - name: 'ubuntu'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        echo "This should not print"
+        npm install make
+        make hello
+        make test
+        make hello2
 timeout: 660s
