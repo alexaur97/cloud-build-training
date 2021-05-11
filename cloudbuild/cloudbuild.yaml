@@ -16,5 +16,4 @@ steps:
       - '-c'
       - |
         make stop BUILD_ID=$BUILD_ID
-        make hello2
 timeout: 660s
