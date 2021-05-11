@@ -8,13 +8,5 @@ steps:
         npm install make
         make hello
         make test
-steps:
-  - name: 'gcr.io/cloud-builders/gcloud'
-    id: 'stopping if fail'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        make stop BUILD_ID=$BUILD_ID
-        make hello2
+
 timeout: 660s
