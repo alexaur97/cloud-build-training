@@ -1,2 +1,13 @@
 hello:
-\techo "hello world"
+	echo "hello world"
+test:
+	if npm run test; then\
+		echo "All test passed successfully";\
+	else\
+		echo "One or more tests failed";\
+		#gcloud builds cancel $$BUILD_ID;\
+		exit 1;\
+	fi\
+	
+hello2:
+	echo "This should not print";\

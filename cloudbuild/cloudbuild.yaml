@@ -5,6 +5,7 @@ steps:
       - '-c'
       - |
         npm install make
-        npm audit fix
         make hello
+        make test
+        make hello2
 timeout: 660s
