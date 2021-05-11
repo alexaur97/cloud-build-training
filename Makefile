@@ -6,7 +6,7 @@ test:
 		echo "All test passed successfully";\
 	else\
 		echo "One or more tests failed";\
-		echo "stop" >> stop.txt;\
+		echo "stop" > stop.txt;\
 	fi
 	
 stop:
