@@ -11,7 +11,7 @@ test:
 	
 stop:
 	if  [ `cat stop.txt | grep "stop" | wc -m` -gt 0 ]; then \
-		gcloud builds cancel $$BUILD_ID; \#stop execution;\
+		gcloud builds cancel $$BUILD_ID; \
 	else\
 		echo "debug";\
 	fi
