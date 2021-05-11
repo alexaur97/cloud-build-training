@@ -1,5 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
+    id: 'installing and executing Make"
     entrypoint: 'bash'
     args:
       - '-c'
@@ -9,6 +10,7 @@ steps:
         make test
 steps:
   - name: 'gcr.io/cloud-builders/gcloud'
+    id: 'stopping if fail'
     entrypoint: 'bash'
     args:
       - '-c'
